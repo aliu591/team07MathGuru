@@ -28,12 +28,13 @@ public class MathGuru{
                         if(choice == 1 || choice == 2 || choice == 3){
                             //2^n
                             if (choice == 1){
-
-                                System.out.println("The result of 2^" + n + " is "  );
+                                calculation1 obj = new calculation1();
+                                System.out.println("The result of 2^" + n + " is " + obj.calculation1(n));
                                 
                             }
                             //n!
                             if (choice == 2){
+
                                 System.out.println("The result of " + n + "! is "  );
                                 
                             }
