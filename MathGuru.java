@@ -13,10 +13,20 @@ public class MathGuru{
     public static void main(String[] args){
         while (retry)
             try { 
-                System.out.println("Calculations: 1. 2^n     2. n!     3. fab(n). ");
-                System.out.print("Please enter the option number of calculation: ");
-                //read option
-                int choice = Integer.parseInt(scan.nextLine().trim()); 
+            	boolean judge=true;
+            	int choice=0;
+                while(judge){             	
+                    System.out.println("Calculations: 1. 2^n     2. n!     3. fab(n). ");
+                    System.out.print("Please enter the option number of calculation: ");
+                    //read option
+                    choice = Integer.parseInt(scan.nextLine().trim()); 
+                    if(choice>3){
+                	System.out.print("Invalid choice number. Please enter again!\n");
+                	}else{
+                		break;
+                	}
+                }
+                
 
                 
 
@@ -34,8 +44,8 @@ public class MathGuru{
                             }
                             //n!
                             if (choice == 2){
-
-                                System.out.println("The result of " + n + "! is "  );
+                            	calculation2 obj = new calculation2();
+                                System.out.println("The result of " + n + "! is " + obj.function2(n) );
                                 
                             }
                             //fab(n)
