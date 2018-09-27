@@ -1,5 +1,8 @@
 public class calculation2 {
 	public int function2(int n){
+        if(n<0){
+            return false;
+        }
 		int res=1;
 		int i = 1;
 		while(i<=n){
