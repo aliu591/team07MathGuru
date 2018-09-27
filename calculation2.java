@@ -3,7 +3,7 @@ public class calculation2 {
         if(n<0){
             return false;
         }
-		int res=1;
+		double res=1;
 		int i = 1;
 		while(i<=n){
 		       res=i*res;
